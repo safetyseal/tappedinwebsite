@@ -301,7 +301,7 @@ ul{
 }
 
 .contact_social i{
-    font-size: 21px;
+    font-size: 22px;
 }
 .contact_info{
     margin-bottom: 10px;
@@ -327,13 +327,6 @@ ul{
     .side_banner, .side_banner_2{
         height: 30vh;
         margin: 10px 0px;
-    }
-    .container{
-        padding-left:10px;
-        padding-right: 5px;
-    }
-    .explore_area{
-        padding: 80px 10px;
     }
 
   }
