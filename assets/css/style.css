@@ -303,7 +303,9 @@ ul{
 .contact_social i{
     font-size: 21px;
 }
-
+.contact_info{
+    margin-bottom: 10px;
+}
 .accordion-button{
     padding: 0.5rem;
 }
