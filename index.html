@@ -65,7 +65,7 @@
     <!---------------------------------- images carousel section --------------------------------->
     <section>
         <div class="hero_area">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -80,11 +80,7 @@
                           <h5>Need Cash?</h5>
                         </a>
                        </div>
-                        <div class="common_btn wow fadeInDown">
-                          <a target="_blank" href="https://www.instagram.com/tappedinworldwide/">
-                            <h5>Contact Us <i class="fa-solid fa-arrow-right-long"></i></h5>
-                          </a>
-                        </div>
+                       <button class="button open-modal wow fadeInUp">Contact Us</button>
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
@@ -95,11 +91,7 @@
                          <h5>Need Cash?</h5>
                        </a>
                       </div>
-                       <div class="common_btn">
-                         <a target="_blank" href="https://www.instagram.com/tappedinworldwide/">
-                           <h5>Contact Us <i class="fa-solid fa-arrow-right-long"></i></h5>
-                         </a>
-                       </div>
+                      <button class="button open-modal wow fadeInUp">Contact Us</button>
                    </div>
                   </div>
                   <div class="carousel-item">
@@ -110,11 +102,7 @@
                          <h5>Need Cash?</h5>
                        </a>
                       </div>
-                       <div class="common_btn">
-                         <a target="_blank" href="https://www.instagram.com/tappedinworldwide/">
-                           <h5>Contact Us <i class="fa-solid fa-arrow-right-long"></i></h5>
-                         </a>
-                       </div>
+                      <button class="button open-modal wow fadeInUp">Contact Us</button>
                    </div>
                   </div>
                 </div>
@@ -161,11 +149,33 @@
       </div>
      </div>
    </section>
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
+
+
+
+<!-- google review section -->
+<div class="container mt-5">
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
 <div class="elfsight-app-ceb857b4-e561-4d9f-b028-8a0c14b19f2c" data-elfsight-app-lazy></div>
+</div>
+
+
+<div class="container">
+  <div class="embedsocial-hashtag" data-ref="87f48992e3113db420e9a792bcc3ec7f77bfcdcc"> <a class="feed-powered-by-es feed-powered-by-es-feed-img es-widget-branding" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Instagram widget"> <img src="https://embedsocial.com/cdn/icon/embedsocial-logo.webp" alt="EmbedSocial"> <div class="es-widget-branding-text">Instagram widget</div> </a> </div> <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script>
+
+</div>
+
+
+
+
+
+
+
+
+
+
 <!--------------------------------------------- about section --------------------------------->
    <section>
-    <div class="container">
+    <div class="container py-5">
       <div class="row g-0 mt-5">
         <div class="col-md-5 ">
           <div class="about_logo wow fadeInLeft">
@@ -177,13 +187,101 @@
               <h4 class="fw-bold my-2">About</h4>
               <p>Welcome to Tapped In Worldwide – Your Trusted Hub for Precious Metals, Gemstones, and Luxury Goods. We redefine luxury with transparency, fair value, and craftsmanship. Our curated collection embodies timeless elegance and refined taste. Explore the world of precious metals and gemstones with insights tailored for you. Elevate your style with Tapped In Worldwide, where luxury meets conscience. Uncover treasures that tell unique stories of artistry and dedication. Indulge in the extraordinary – your style deserves it.</p>
               <div class="common_btn mt-4">
-                <a target="_blank" href="https://www.instagram.com/tappedinworldwide/">Contact Us</a>
+                <button class="button open-modal">Contact</button>
               </div>
             </div>
         </div>
       </div>
     </div>
    </section>
+
+
+<div class="pop_up py-5" style="background-color: #edfff6;">
+  <div class="container">
+    <div class="modal_contact">
+      <div class="row">
+        <div class="col-md-8 offset-md-3">
+          <div class="modal_content">
+            <h4 class="fw-bold">Get in Touch with Tapped In Worldwide</h4>
+            <div class="modal_para my-2">
+              <p>We value your interest in Tapped In Worldwide and are here to assist you. At Tapped In Worldwide, we believe in building lasting relationships with our clients. Your feedback and questions are important to us, as they help us enhance your experience and ensure that we meet your luxury needs with transparency and integrity.</p>
+              <p>Feel free to reach out to us via the contact form below, or connect with us through our social media channels. We look forward to hearing from you and helping you discover the extraordinary treasures that await!
+            </div>
+
+            </p>
+            <button class="button open-modal">Contact</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="close" id="closeModal">&times;</button>
+            <h2 class="my-2 text-center">We’re here to help!</h2>
+            <p class="text-center">Contact us for inquiries about our collection or services.</p>
+            <div class="container mt-4">
+              <form action="https://formspree.io/f/mwpkrkvr" method="POST" id="contact-form">
+                <div class="row">
+                    <!-- Full Name -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-control" placeholder=" " required>
+                            <label for="name" class="form-label">Full Name</label>
+                        </div>
+                    </div>
+                    <!-- Email Address -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-control" placeholder=" " required>
+                            <label for="email" class="form-label">Email Address</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Subject -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder=" " required>
+                            <label for="subject" class="form-label">Subject</label>
+                        </div>
+                    </div>
+                    <!-- Phone Number -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" data-type="phone" id="phone" name="phone" class="form-control" placeholder=" " required>
+                            <label for="phone" class="form-label">Phone Number</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Message -->
+                <div class="form-group">
+                    <textarea id="message" name="message" class="form-control" rows="4" placeholder=" " required></textarea>
+                    <label for="message" class="form-label">Message</label>
+                </div>
+                <button type="submit" class="button">
+                    <span>Submit</span>
+                </button>
+            </form>
+
+            <!-- Success message-->
+            <div id="success-message" style="display:none; color: green; font-weight: bold; text-align: center; margin-top: 20px;">
+              Your message has been sent successfully!
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
 <!--------------------------------------------- sidebar section --------------------------------->
    <section class="sidebar py-5">
     <div class="container">
@@ -191,8 +289,7 @@
         <div class="col-md-6">
           <div class="side_banner">
             <div class="common_btn sidebar_button">
-              <a target="_blank" href="https://www.instagram.com/tappedinworldwide/">
-                Contact Us <i class="fa-solid fa-arrow-right-long"></i>
+              <button class="button open-modal">Contact</button>
               </a>
             </div>
           </div>
@@ -200,8 +297,7 @@
         <div class="col-md-6">
           <div class="side_banner_2">
             <div class="common_btn sidebar_button">
-              <a target="_blank" href="https://www.instagram.com/tappedinworldwide/">
-               Contact Us <i class="fa-solid fa-arrow-right-long"></i>
+              <button class="button open-modal">Contact</button>
               </a>
             </div>
           </div>
@@ -556,6 +652,78 @@
    </div>
   </footer>
 </section>
+
+
+
+
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var form = this;
+      var formData = new FormData(form);
+      
+      fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+              'Accept': 'application/json'
+          }
+      })
+      .then(function(response) {
+          if (response.ok) {
+              document.getElementById('success-message').style.display = 'block';
+              setTimeout(function() {
+                  window.location.href = 'https://mdshukur.github.io/tappedinwebsite_update3/';
+              }, 4000);
+          } else {
+              alert('Oops! Something went wrong.');
+          }
+      })
+      .catch(function(error) {
+          console.error('Error:', error);
+          alert('An error occurred. Please try again.');
+      });
+  });
+</script>
+
+
+
+
+
+
+
+
+<script>
+  // Get all buttons with the class "open-modal"
+  const openModalButtons = document.querySelectorAll('.open-modal');
+  const closeModal = document.getElementById('closeModal');
+  const modal = document.getElementById('modal');
+
+  // Add a click event listener to each button
+  openModalButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+          modal.style.display = 'flex';
+      });
+  });
+
+  // Close the modal when clicking the close button
+  closeModal.addEventListener('click', () => {
+      modal.style.display = 'none';
+  });
+
+  // Close the modal when clicking outside of it
+  window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+          modal.style.display = 'none';
+      }
+  });
+</script>
+
+
+
+
 
 
 
