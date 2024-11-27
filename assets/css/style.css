@@ -1,0 +1,366 @@
+
+
+/* common css */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x:hidden;
+}
+a{
+    text-decoration: none;
+}
+p{
+    padding: 0;
+    margin:0;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    padding: 0;
+    margin:0;
+}
+
+/*-------------------------------------- button css ----------------------------------*/
+.cash_link a{
+    background-color:black;
+    padding:10px 50px;
+    color:#eac576;
+    border-radius: 50px;
+    border:2px solid #eac576;
+    display: inline-block;
+    transition: 0.2s;
+}
+.cash_link a:hover{
+    background-color:rgb(255, 255, 255);
+    color:#000;
+    border:2px solid #000;
+}
+.common_btn a{
+    font-weight: 600;
+    color: #eac576;
+    background: #000;
+    border:2px solid #eac576;
+    font-size: 15px;
+    padding: 10px 25px;
+    transition: 0.2s;
+    border-radius: 50px;
+    display: inline-block;
+   }
+   .common_btn a:hover{
+    background-color:rgb(255, 255, 255);
+    color:#000;
+    border:2px solid #000;
+
+  }
+/*--------------------------------------------------------- about css --------------------------------------*/
+.about_logo {
+   text-align: center;
+}
+
+.about_logo img {
+    width: 50%;
+
+}
+
+/*------------------------------------------- service css ----------------------------------*/
+.services{
+    
+    background: #edfff6;
+}
+.service_box{
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    padding:15px 20px;
+    margin:10px 0px;
+}
+.service_box i{
+    padding-right: 7px;
+}
+
+
+/*--------------------------------- form css -----------------------------------*/
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+.form-control {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 12px 16px;
+    border:0;
+    font-size: 16px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.form-control:focus {
+    outline: none;
+    border-color: #007bff;
+    background: #f4f4f4;
+    box-shadow:0 0 4px rgba(0, 123, 255, 0.25);
+}
+.form-label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    font-weight: 500;
+    color:#4b5051;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+.form-control:focus + .form-label,
+.form-control:not(:placeholder-shown) + .form-label {
+    top: 5px;
+    left: 12px;
+    font-size: 15px;
+    color:#393c3c;
+    background: #ffffff;
+    padding: 0 4px;
+}
+/*------------------------------------------------------ button css --------------------------------------*/
+/* .btn-submit {
+position: relative;
+box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+display: inline-block;
+padding: 12px 45px;
+font-size: 16px;
+font-weight: bold;
+color: #fff;
+background-color: #1ECD97;
+border:none;
+outline: none;
+border-radius: 50px;
+overflow: hidden;
+cursor: pointer;
+transition: color 0.3s ease;
+z-index: 1;
+}
+
+.btn-submit::before {
+content: '';
+position: absolute;
+top: 0;
+left: -100%;
+width: 100%;
+height: 100%;
+background-color:#ff9e0148;
+transition: left 0.4s ease;
+z-index: 0;
+}
+
+.btn-submit:hover::before {
+left:0;
+}
+
+.btn-submit:hover {
+color: #ffffff;
+}
+
+.btn-submit span {
+position: relative;
+z-index: 1;
+} */
+
+/*---------------------------------------------------- pop up box ------------------------------------------*/
+.button {
+    font-weight: 600;
+    color: #eac576;
+    background: #000;
+    border: 2px solid #eac576;
+    font-size: 15px;
+    padding: 10px 35px;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.button:hover {
+    background-color:#fff;
+    color: #000;
+    border: 2px solid #000;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.modal_content{
+    border-left: 4px solid #e9b646;
+    padding-left: 20px;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*------------------------------------------ banner css -----------------------------------*/
+.side_banner{
+    background: url(../images/subbanner-1-image.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+    position: relative;
+
+}
+
+.side_banner_2{
+    background: url(../images/diamonds.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+    position: relative;
+
+}
+
+.sidebar_button {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    padding: 0;
+  }
+
+.details_bio h4{
+    position: relative;
+    font-weight: 800;
+    margin-bottom: 15px;
+    z-index: -1;
+    
+}
+.details_bio h4::after {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 3px;
+    background-color: #616060;
+    margin-top:10px; 
+  }
+  .compaire_img img {
+    border: 1px solid rgba(189, 189, 189, 0.618);
+    margin-top: 21px;
+}
+/*--------------------------------------------- expanded buttn css ---------------------------------*/
+.accordion-button{
+    padding: 0.5rem;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #fff;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+.extra_clr a{
+    color: #6c757d!important;
+}
+/*----------------------------------------------- footer css -----------------------------------------*/
+.contact_social i{
+    font-size: 21px;
+}
+.contact_info{
+    margin-bottom: 10px;
+}
+/*----------------------------------------------- responsive css ---------------------------------------*/
+@media only screen and (max-width: 667px) {
+    .side_banner, .side_banner_2{
+        height: 30vh;
+        margin: 10px 0px;
+    }
+    .container{
+        padding-left:10px;
+        padding-right: 5px;
+    }
+    .service_box {
+        margin: 10px 30px;
+    }
+
+  }
+  .carousel-control-prev-icon {
+    background-image: url(../images/la.png);
+}
+.carousel-control-next-icon {
+    background-image: url(../images/ra.png);
+}
+.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
+    filter:none;
+}
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1;
+}
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity:1;
+}
+
+   /* Background overlay */
+   .successful_text {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+}
+
+/* Popup content */
+.successful_text-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    text-align: center;
+    position: relative;
+}
+
+/* Close button */
+.successful_close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.successful_close:hover,
+.successful_close:focus {
+    color: black;
+}
